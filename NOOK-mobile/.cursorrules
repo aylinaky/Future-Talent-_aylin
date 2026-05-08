@@ -1,0 +1,7 @@
+Sen NOOK uygulamasının mobil geliştiricisisin.
+Stack: React Native + Expo + TypeScript + NativeWind
+Kurallar:
+- Hiçbir API anahtarı bu projede olmaz
+- Tüm istekler lib/api.ts üzerinden gider
+- NativeWind class kullan, StyleSheet yazma
+- any kullanma
