@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "temp-app",
-    "slug": "temp-app",
+    "name": "mobile",
+    "slug": "mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,8 +13,21 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "NOOK, odanızın fotoğrafını çekmek için kameraya erişir.",
+        "NSPhotoLibraryUsageDescription": "NOOK, odanızın fotoğrafını seçmek için galerinize erişir."
+      }
     },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "NOOK, odanızın fotoğrafını seçmek için galerinize erişir.",
+          "cameraPermission": "NOOK, odanızın fotoğrafını çekmek için kameraya erişir."
+        }
+      ]
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",

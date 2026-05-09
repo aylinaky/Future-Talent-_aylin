@@ -1,30 +1,20 @@
----
-globs: /frontend
-alwaysApply: true
-description: |
-  Tüm frontend tasarım ve UI çalışmalarında bu design system guide'ını zorunlu kural olarak uygula. Bileşen, sayfa veya stil oluşturulurken burada belirtilen görsel dil, bileşen yapısı ve interaksiyon prensiplerinden sapma olamaz.
----
+NOOK tasarım kuralları:
 
-# Tasarım Sistemi Kuralı
+Renk paleti:
+- Arka plan: #F5F0EB (krem)
+- Ana metin: #1A1A1A
+- Vurgu: #C4622D (tuğla/terracotta)
+- İkincil metin: #8A8A8A
+- Kart arka planı: #FFFFFF
 
-## 1. Görsel Dil ve Temel Stil (Global Styles)
-- **Renk Paleti:** Ana arka plan rengi olarak #F5F1E9 (sıcak krem) veya #FAF8F4 kullanılacak. Metinler için #2D2926 (antrasit/koyu kahve) dışında tonlardan kaçınılacak.
-- **Tipografi:** Tüm başlıklarda kaliteli bir Serif font (ör: Playfair Display veya Lora), gövde metinleri ve butonlarda temiz bir Sans-serif (ör: Inter veya Satoshi) kullanılacak. Farklı font kullanılmaz.
-- **Kenarlıklar (Borders):** Tüm kart ve butonlarda geniş yuvarlatılmış köşeler (border-radius: 24px veya 32px) zorunlu.
+Tipografi:
+- Başlıklar: serif font (büyük, ince)
+- Gövde: sans-serif (küçük, spaced)
+- Etiketler: uppercase, letter-spacing geniş
 
-## 2. UI Bileşen Kuralları
-- Fiyat ve stil etiketlerinde (örn: "Under $30", "Warm minimal") sadece tam yuvarlatılmış, tıklanabilir "pill" butonlar kullanılır.
-- Ürün/kürasyon kartlarında (örn: "Ekran görüntüsü 2026-05-09 191706.jpg") görsel merkezde, altında ince tipografi ile fiyat ve isim bulunur.
-- Analiz skoru ("Ekran görüntüsü 2026-05-09 191716.jpg"): Puan büyük puntolu serif ile sağ üstte, altına ikonlu özellik etiketleri (Soft Light, Natural Texture vb.) yatay veya dikey gridde.
-
-## 3. UX ve Etkileşim Kuralları
-- Formsuz, direkt yönlendirmeler esas: Kullanıcı doğrudan "Upload your room" kartına çıkar; Take photo ve From library ana aksiyon butonları olarak öne çıkarılır.
-- "Analyzing" sürecinde aşamalı check mark animasyonlu liste ("Listening to your room" başlığı altında "Reading the room", "Mapping color palette" vb. adımlar) gösterilir.
-- "Pieces for your nook" başlıklarının altına, bütçeye uygunluk açıklaması (ör: "Eight picks under $80") eklemek zorunlu.
-
-## 4. Teknik Uygulama
-- **Responsive:** Tüm kod mobile-first olmalı (maksimum 430px genişliğe optimize). Masaüstünde ise içerik max-width konteyner ile ortalanır.
-- **Tailwind & Prompt:** Tasarım dili için örnek prompt:  
-  `"Referans görsellerdeki estetiği yansıtan, rounded-3xl kartlar, bg-warm-cream arka plan ve serif başlıklar içeren bir Next.js bileşeni oluştur."`
-
-> Bu kurallar *her zaman* uygulanır. Tasarım ve kod uygulamalarında herhangi bir esneme veya istisna yapılamaz; bu kuralların dışına çıkan iş, tasarım review sonrası kesinlikle reddedilir.
+Stil kuralları:
+- Köşeler yumuşak (border-radius: 16px)
+- Gölgeler çok hafif
+- Bolca beyaz alan bırak
+- Kartlar beyaz, arka plan krem
+- Butonlar: siyah (primary) ve outline (secondary)
